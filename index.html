@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Tag Arena - Ultimate Local Multiplayer Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff4785;
+            --secondary: #00d2ff;
+            --accent: #9d50bb;
+            --dark: #0f0c29;
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background: var(--dark);
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Hero Section */
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .hero-img:hover { transform: scale(1.02); }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .tagline { font-size: 1.5rem; opacity: 0.9; margin-bottom: 40px; }
+
+        .cta-buttons { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 10px 20px rgba(255, 71, 133, 0.3);
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(255, 71, 133, 0.5); }
+
+        .btn-outline {
+            background: var(--glass);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+        .btn-outline:hover { background: rgba(255,255,255,0.2); transform: translateY(-3px); }
+
+        /* Features */
+        .section { padding: 100px 0; }
+        .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 60px; }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--glass);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .feature-card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.15); }
+
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; display: block; }
+        .feature-card h3 { font-size: 1.8rem; margin-bottom: 15px; }
+
+        /* Get Started */
+        .guide-section { background: rgba(0,0,0,0.2); padding: 80px 0; border-radius: 30px; }
+        .steps { display: flex; flex-direction: column; gap: 30px; max-width: 800px; margin: 0 auto; }
+        .step { display: flex; gap: 20px; align-items: flex-start; }
+        .step-num {
+            background: var(--secondary);
+            color: var(--dark);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 100px;
+        }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 15px; transition: color 0.3s; }
+        .footer-links a:hover { color: white; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .section { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <img src="assets/splash.png" alt="Chase Tag Arena Splash" class="hero-img">
+        <h1>Chase Tag Arena</h1>
+        <p class="tagline">The ultimate local multiplayer tag arena. Apologize to your friends later.</p>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">
+                <span>Download on Google Play</span>
+            </a>
+            <a href="#guide" class="btn btn-outline">
+                <span>Get Started Guide</span>
+            </a>
+            <a href="#" class="btn btn-outline" style="opacity: 0.7; cursor: default;">
+                <span>Coming Soon to App Store</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="container section">
+        <h2 class="section-title">Game Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🎮</span>
+                <h3>8 Players Local</h3>
+                <p>Connect up to 8 players! No need for extra controllers—everyone uses their own device as both a controller and a viewport for their personal perspective.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🌐</span>
+                <h3>Totally Offline</h3>
+                <p>Play anywhere, anytime. Chase Tag Arena requires <b>zero</b> internet connection. Just hop on the same local Wi-Fi or hotspot and start the chase.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📺</span>
+                <h3>TV Spectator Mode</h3>
+                <p>Connect a TV or large screen to the host device for an epic cinematic view. Let spectators cheer on the action while you dominate the arena!</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🏗️</span>
+                <h3>Level Editor</h3>
+                <p>Build your own arenas with the powerful built-in editor. Place obstacles, traps, and power-ups anywhere—even while offline.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3>Cross-Platform</h3>
+                <p>Play seamlessly on Phone, Tablet, PC, or Mac. Every device works together in the same arena.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="container section">
+        <div class="guide-section">
+            <h2 class="section-title">Get Started Guide</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h3>Install the App</h3>
+                        <p>Download Chase Tag Arena from the Google Play Store on your favorite devices.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h3>Join the Lobby</h3>
+                        <p>Make sure everyone is on the same Wi-Fi network. One player hosts a game, and others can join instantly.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h3>Choose Your Arena</h3>
+                        <p>Select from our default professional maps or dive into the community's custom creations.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h3>Run, Jump, Tag!</h3>
+                        <p>Use simple controls to outmaneuver your friends. First one to tag everyone wins!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="app-ads.txt">App-Ads.txt</a>
+            </div>
+            <p>&copy; 2026 Alex J. Chase Tag Arena and all associated assets are trademarks of the developer.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

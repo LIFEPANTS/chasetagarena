@@ -742,7 +742,7 @@ document.addEventListener('DOMContentLoaded', () => {
         selectorContainer.style.right = '20px';
         selectorContainer.style.zIndex = '9999';
         
-        const selectorHTML = \`
+        const selectorHTML = `
             <select id="lang-selector" onchange="changeLanguage(this.value)" style="padding: 8px; border-radius: 8px; background: rgba(0,0,0,0.7); color: white; border: 1px solid rgba(255,255,255,0.3); cursor: pointer; font-family: 'Fredoka', sans-serif; font-size: 14px; outline: none; backdrop-filter: blur(5px);">
                 <option value="en">English</option>
                 <option value="no">Norsk</option>
@@ -753,7 +753,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <option value="it">Italiano</option>
                 <option value="es">Español</option>
             </select>
-        \`;
+        `;
         selectorContainer.innerHTML = selectorHTML;
         document.body.appendChild(selectorContainer);
     }

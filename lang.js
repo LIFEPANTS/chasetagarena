@@ -1,6 +1,9 @@
 // Website translations
 const siteTranslations = {
     en: {
+        "Available Arenas": "Available Arenas",
+        "Looking for arenas on your network...": "Looking for arenas on your network...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.",
         "t_0": "Chase Tag Arena",
         "t_1": "The ultimate local multiplayer tag arena. Apologize to your friends later.",
         "t_2": "Download on Google Play",
@@ -73,7 +76,7 @@ const siteTranslations = {
         "t_69": "3. Game Modes (Tag Types)",
         "t_70": "Chase Tag Arena features a variety of exciting tag types:",
         "t_71": "Classic:",
-        "t_72": "One player starts as \"It\". Their goal is to tag another player to pass it on. The player who is \"It\" the least amount of time wins.",
+        "t_72": "One player starts as \"It\". Their goal is to tag another player. Evaders earn points by evading until the time runs out, or when another evader is tagged. The chaser earns a point by tagging someone. First to 10 points wins the match!",
         "t_73": "Zombie:",
         "t_74": "One player starts infected. Every player they tag also becomes infected. The last uninfected survivor wins!",
         "t_75": "Freeze:",
@@ -139,6 +142,9 @@ const siteTranslations = {
         "t_135": "In no event shall Alex J be liable for any damages arising out of the use or inability to use the game."
     },
     no: {
+        "Available Arenas": "Tilgjengelige Arenaer",
+        "Looking for arenas on your network...": "Leter etter arenaer på nettverket ditt...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "Ingen lokale arenaer funnet på WiFi. Sørg for at verten har \"Host & Play\" åpen.",
         "t_0": "Chase Tag Arena",
         "t_1": "Den ultimate lokale flerspillerarenaen. Be vennene dine om unnskyldning senere.",
         "t_2": "Last ned på Google Play",
@@ -277,6 +283,9 @@ const siteTranslations = {
         "t_135": "Utvikler er ikke ansvarlig for skader knyttet til bruk av spillet."
     },
     de: {
+        "Available Arenas": "Verfügbare Arenen",
+        "Looking for arenas on your network...": "Suche nach Arenen in Ihrem Netzwerk...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "Keine lokalen Arenen im WLAN gefunden. Stellen Sie sicher, dass der Host \"Host & Play\" geöffnet hat.",
         "t_0": "Chase Tag Arena",
         "t_1": "Die ultimative lokale Multiplayer-Tag-Arena. Entschuldige dich später bei deinen Freunden.",
         "t_2": "Auf Google Play herunterladen",
@@ -415,6 +424,9 @@ const siteTranslations = {
         "t_135": "Der Entwickler haftet nicht für Schäden."
     },
     fi: {
+        "Available Arenas": "Saatavilla olevat areenat",
+        "Looking for arenas on your network...": "Etsitään areenoita verkostasi...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "Paikallisia areenoita ei löytynyt Wi-Fi-verkosta. Varmista, että isännällä on \"Host & Play\" auki.",
         "t_0": "Chase Tag Arena",
         "t_1": "Ultimaattinen paikallinen moninpeli. Pyydä anteeksi ystäviltäsi myöhemmin.",
         "t_2": "Lataa Google Playsta",
@@ -553,6 +565,9 @@ const siteTranslations = {
         "t_135": "Kehittäjä ei ole vastuussa vahingoista."
     },
     sv: {
+        "Available Arenas": "Tillgängliga Arenor",
+        "Looking for arenas on your network...": "Letar efter arenor på ditt nätverk...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "Inga lokala arenor hittades på ditt Wi-Fi. Se till att värden har \"Host & Play\" öppet.",
         "t_0": "Chase Tag Arena",
         "t_1": "Den ultimata lokala multiplayer-arenan. Be dina vänner om ursäkt senare.",
         "t_2": "Ladda ner på Google Play",
@@ -690,9 +705,18 @@ const siteTranslations = {
         "t_134": "6. Ansvarsbegränsning",
         "t_135": "Skaparen ansvarar inte för skador."
     },
-    da: { "t_50": "\"VÆRT & SPIL\"", "t_57": "\"TILSLUT ARENA\"", "t_65": "\"+ JÆGER BOT\"", "t_67": "\"+ FLYGTNING BOT\"", "t_71": "Klassisk:", "t_73": "Zombie:", "t_75": "Frys:", "t_103": "JOYSTICK-FØLSOMHET:", "t_105": "GRAFIK:" },
-    it: { "t_50": "\"OSPITA & GIOCA\"", "t_57": "\"UNISCITI ALL'ARENA\"", "t_65": "\"+ BOT INSEGUITORE\"", "t_67": "\"+ BOT FUGGITIVO\"", "t_71": "Classico:", "t_73": "Zombie:", "t_75": "Ghiaccio:", "t_103": "SENSIBILITÀ JOYSTICK:", "t_105": "GRAFICA:" },
-    es: { "t_50": "\"ORGANIZAR Y JUGAR\"", "t_57": "\"UNIRSE A LA ARENA\"", "t_65": "\"+ CAZADOR BOT\"", "t_67": "\"+ EVASOR BOT\"", "t_71": "Clásico:", "t_73": "Zombi:", "t_75": "Congelar:", "t_103": "SENSIBILIDAD JOYSTICK:", "t_105": "GRÁFICOS:" }
+    da: {
+        "Available Arenas": "Tilgængelige Arenaer",
+        "Looking for arenas on your network...": "Leder efter arenaer på dit netværk...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "Ingen lokale arenaer fundet på dit Wi-Fi. Sørg for, at værten har \"Host & Play\" åben.", "t_50": "\"VÆRT & SPIL\"", "t_57": "\"TILSLUT ARENA\"", "t_65": "\"+ JÆGER BOT\"", "t_67": "\"+ FLYGTNING BOT\"", "t_71": "Klassisk:", "t_73": "Zombie:", "t_75": "Frys:", "t_103": "JOYSTICK-FØLSOMHET:", "t_105": "GRAFIK:" },
+    it: {
+        "Available Arenas": "Arene Disponibili",
+        "Looking for arenas on your network...": "Cerco arene sulla tua rete...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "Nessuna arena locale trovata sul Wi-Fi. Assicurati che l'Host abbia aperto \"Host & Play\".", "t_50": "\"OSPITA & GIOCA\"", "t_57": "\"UNISCITI ALL'ARENA\"", "t_65": "\"+ BOT INSEGUITORE\"", "t_67": "\"+ BOT FUGGITIVO\"", "t_71": "Classico:", "t_73": "Zombie:", "t_75": "Ghiaccio:", "t_103": "SENSIBILITÀ JOYSTICK:", "t_105": "GRAFICA:" },
+    es: {
+        "Available Arenas": "Arenas Disponibles",
+        "Looking for arenas on your network...": "Buscando arenas en tu red...",
+        "No local arenas found on your Wi-Fi. Ensure the Host has \"Host & Play\" open.": "No se encontraron arenas locales en tu Wi-Fi. Asegúrate de que el Host tenga \"Host & Play\" abierto.", "t_50": "\"ORGANIZAR Y JUGAR\"", "t_57": "\"UNIRSE A LA ARENA\"", "t_65": "\"+ CAZADOR BOT\"", "t_67": "\"+ EVASOR BOT\"", "t_71": "Clásico:", "t_73": "Zombi:", "t_75": "Congelar:", "t_103": "SENSIBILIDAD JOYSTICK:", "t_105": "GRÁFICOS:" }
 };
 
 function getDeviceLang() {
